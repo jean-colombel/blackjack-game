@@ -124,20 +124,22 @@ function showScore(activePlayer) {
 
 // STAND
 async function onStand() {
-  blackjackGame.isStand = true
+  if (!blackjackGame.isBetOn) {
+    blackjackGame.isStand = true
 
-  if (!blackjackGame.isTurnOver) {
-    while (DEALER.score < 16 && blackjackGame.isStand) {
-      let card = randomCard()
-      showCard(DEALER, card)
-      updateScore(DEALER, card)
-      showScore(DEALER)
-      await sleep(700)
+    if (!blackjackGame.isTurnOver) {
+      while (DEALER.score < 16 && blackjackGame.isStand) {
+        let card = randomCard()
+        showCard(DEALER, card)
+        updateScore(DEALER, card)
+        showScore(DEALER)
+        await sleep(700)
+      }
+
+      blackjackGame.isTurnOver = true
+      let winner = computeWinner()
+      showResult(winner)
     }
-
-    blackjackGame.isTurnOver = true
-    let winner = computeWinner()
-    showResult(winner)
   }
 }
 

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: #151320;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+.banner a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #73b86a;
+  color: white;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 32px;
+  transition: all 0.5s ease;
+}
+
+.banner a:hover {
+  background-color: #498e40;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+footer {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  padding: 0px 50px;
+}
+
+.footer-links a {
+  font-size: 32px;
+  color: #151320;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  margin: 8px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 120px 30px;
+}
+
+.fa-html5 {
+  font-size: 150px;
+  color: #dd4c30;
+  animation: rotateY 10s infinite linear;
+}
+
+.fa-css3-alt {
+  font-size: 150px;
+  color: #46aac0;
+  animation: rotateY 10s infinite linear;
+}
+
+.fa-js {
+  font-size: 150px;
+  color: #efd948;
+  animation: rotateY 10s infinite linear;
+}
+
+@keyframes rotateY {
+  to {
+    transform: rotateY(360deg);
+  }
+}

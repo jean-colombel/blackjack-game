@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./static/css/casino.css" />
+    <title>Casino Blackjack</title>
+  </head>
+  <body>
+    <a href="./index.html" id="homepage"><i class="fas fa-home"></i></a>
+    <a id="main-audio"><i class="fas fa-volume-up"></i></a>
+    <div class="main-container">
+      <h1><span>💰</span> Casino Blackjack <span>💰</span></a>
+      <h3><span id="result">Let's play!</span></h3>
+      <div class="board">
+        <div id="your-box">
+          <h2>You: <span id="your-score">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-score">0</span></h2>
+        </div>
+      </div>
+      <div id="totalCash">Total Cash: <span id="totalCashSpan">0</span>$</div>
+      <div class="warning"></div>
+      <div class="buttons-container">
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+        <button id="deal-button">Deal</button>
+      </div>
+      <div class="coins-container">
+        <ul id="coins-list">
+          <li><a class="coin-item" href="#" data-value=1 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/1.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=5 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/5.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=10 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/10.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=50 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/50.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=100 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/100.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=500 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/500.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=1000 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/1000.png" width="75px"></a></li>
+          <li><a class="coin-item" href="#" data-value=5000 onclick="setBet(this)"><img class="coinImg" src="./static/images/Coins/5000.png" width="75px"></a></li>
+        </ul>
+        <div>Total Bet: <span id="totalBet"></span></div>
+      </div>
+    </div>
+    <script src="static/js/casino.js"></script>
+  </body>
+</html>

@@ -192,6 +192,8 @@ function showResult(winner) {
   document.getElementById("totalCashSpan").innerText = YOU.totalCash
   if (YOU.totalCash < 0) {
     document.querySelector(".warning").innerText = "⚠️ You how the casino money!!"
+  } else {
+    document.querySelector(".warning").innerText = ""
   }
 }
 

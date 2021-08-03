@@ -159,6 +159,7 @@ button:hover {
 
 #coins-list > li {
   display: inline;
+  cursor: pointer;
 }
 
 .coinImg {

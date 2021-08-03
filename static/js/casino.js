@@ -191,7 +191,7 @@ function showResult(winner) {
   // Update total cash (+ warning)
   document.getElementById("totalCashSpan").innerText = YOU.totalCash
   if (YOU.totalCash < 0) {
-    document.querySelector(".warning").innerText = "⚠️ You how the casino money!!"
+    document.querySelector(".warning").innerText = "⚠️ You owe the casino money!!"
   } else {
     document.querySelector(".warning").innerText = ""
   }
